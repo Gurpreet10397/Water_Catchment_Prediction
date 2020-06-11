@@ -49,8 +49,8 @@ def api_call(lat,long,rainwater,groundwater,soil_score,elevation):
 
     body = str.encode(json.dumps(data))
 
-    url = 'https://ussouthcentral.services.azureml.net/workspaces/e8133a8b3c3e4e70be72cffb0e45a85c/services/95b227a3833042df9afeb7abe8cbd71b/execute?api-version=2.0&format=swagger'
-    api_key = 'LQ0Tb4vX0P7Fbb/zuGmNSauhlKrJv7WcKJps70psDo+8f1vKrV7GyX/XQCD5pJ4CUG/pNeQc/xZX+XK/T5RQkw==' # Replace this with the API key for the web service
+    url = #Replace this with workspace url
+    api_key =  # Replace this with the API key for the web service
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
